@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "812195696130",
+    "project_id": "firebase-scious"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812195696130:android:6e48d986190183d3",
+        "android_client_info": {
+          "package_name": "id.bonabrian.scious"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812195696130-1ndi6flefp6bpevc26hracu9983mfdpo.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "812195696130-n8vlccj2vi29h6d5nt6ra0s3c0k646sl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.bonabrian.scious",
+            "certificate_hash": "6a6a810dcc2abf1b5587b728369916bc278296be"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ3EuIRj0ucn7wG35LRCseNgGoAsQC88I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

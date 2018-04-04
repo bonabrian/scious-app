@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="id.bonabrian.scious">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <application
+        android:name=".app.SciousApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/SciousTheme.NoActionBar_StatusBar">
+
+        <activity android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".walkthrough.WalkthroughActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".login.LoginActivity"/>
+        <activity android:name=".register.RegisterActivity"/>
+        <activity android:name=".main.MainActivity"
+            android:screenOrientation="portrait"/>
+        <service android:name=".libraryservice.service.DeviceCommunicationService"/>
+        <receiver android:name=".libraryservice.events.BluetoothStateChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".discovery.DiscoveryActivity"/>
+        <activity android:name=".pairing.DevicePairingActivity"/>
+        <activity android:name=".measuring.MeasuringActivity"/>
+        <activity android:name=".articlesdetail.ArticlesDetailActivity"/>
+        <activity android:name=".historydetails.HistoryDetailActivity"/>
+        <activity android:name=".measuringresult.MeasuringResultActivity"/>
+        <activity android:name=".recommendeddetail.RecommendedDetailsActivity"/>
+        <activity android:name=".pairing.MiBand2PreferencesActivity"/>
+        <activity android:name=".seerecommendation.SeeRecommendation"/>
+    </application>
+
+</manifest>

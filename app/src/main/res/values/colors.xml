@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F64C73</color>
+    <color name="colorPrimaryDark">#D1395C</color>
+    <color name="colorAccent">#03A9F5</color>
+
+    <color name="sciousPurple">#C873F4</color>
+
+    <color name="white">#FFF</color>
+    <color name="black">#000000</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="app_blue">#4285f4</color>
+    <color name="gray_light">#CCCCCC</color>
+    <color name="gray">#333333</color>
+    <color name="bottom_navigation_background">#24282B</color>
+    <color name="scious_green">#4cd7c2</color>
+
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#fff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">5dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#fff</color>
+    <dimen name="default_circle_indicator_stroke_width">2dp</dimen>
+
+    <color name="scious_high_stress">#F44336</color>
+    <color name="scious_medium_stress">#FFC107</color>
+    <color name="scious_low_stress">#2196F3</color>
+    <color name="scious_no_stress">#4CAF50</color>
+
+</resources>

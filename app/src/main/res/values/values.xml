@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="p_staccato" type="string">staccato</item>
+    <item name="p_short" type="string">short</item>
+    <item name="p_medium" type="string">medium</item>
+    <item name="p_long" type="string">long</item>
+    <item name="p_waterdrop" type="string">waterdrop</item>
+    <item name="p_ring" type="string">ring</item>
+    <item name="p_alarm_clock" type="string">alarm_clock</item>
+
+    <item name="p_dateformat_time" type="string">dateformat_time</item>
+    <item name="p_dateformat_date_time" type="string">dateformat_date_time</item>
+
+    <item name="p_off" type="string">off</item>
+    <item name="p_automatic" type="string">automatic</item>
+    <item name="p_scheduled" type="string">scheduled</item>
+
+    <item name="p_unit_metric" type="string">metric</item>
+    <item name="p_unit_imperial" type="string">imperial</item>
+
+    <item name="p_heart_rate" type="string">heart_rate</item>
+    <item name="p_steps" type="string">steps</item>
+    <item name="p_distance" type="string">distance</item>
+    <item name="p_calories" type="string">calories</item>
+    <item name="p_battery" type="string">battery</item>
+</resources>

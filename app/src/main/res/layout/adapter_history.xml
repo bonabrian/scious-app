@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/main_card_margin_vertical"
+    android:layout_marginTop="@dimen/main_card_margin_vertical"
+    android:layout_marginStart="@dimen/main_card_margin_horizontal"
+    android:layout_marginEnd="@dimen/main_card_margin_vertical"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_recycler_corner_radius"
+    android:elevation="@dimen/card_recycler_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/stress_image_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:id="@+id/stress_level_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/stress_image_history">
+
+            <ImageView
+                android:id="@+id/stress_image_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_beat_24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/card_title_margin"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_title_margin"
+                android:layout_marginEnd="@dimen/card_title_margin"
+                android:layout_marginTop="@dimen/card_title_margin"
+                android:layout_marginBottom="@dimen/card_title_margin"
+                android:text="@string/stress_level"
+                android:textSize="@dimen/text_size_title"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/stress_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_title_margin"
+                android:layout_marginEnd="@dimen/card_title_margin"
+                android:layout_marginTop="@dimen/card_title_margin"
+                android:layout_marginBottom="@dimen/card_title_margin"
+                android:textSize="@dimen/text_size_title"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="Stres Tinggi"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stress_level_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_time_24dp"
+                android:layout_marginLeft="@dimen/card_title_margin"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_title_margin"
+                android:layout_marginEnd="@dimen/card_title_margin"
+                android:layout_marginTop="@dimen/card_title_margin"
+                android:layout_marginBottom="@dimen/card_title_margin"
+                android:text="@string/history_time"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/history_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_title_margin"
+                android:layout_marginEnd="@dimen/card_title_margin"
+                android:layout_marginTop="@dimen/card_title_margin"
+                android:layout_marginBottom="@dimen/card_title_margin"
+                android:textSize="@dimen/text_size_caption"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="@string/date"/>
+
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:id="@+id/history_divider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_below="@id/history_time_layout"-->
+            <!--android:background="@color/gray_light"-->
+            <!--android:layout_marginTop="@dimen/card_title_margin"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_below="@id/history_divider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/padding_body_default"-->
+            <!--android:gravity="center">-->
+
+            <!--<RatingBar-->
+                <!--android:id="@+id/feeling_rating"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/history_divider"-->
+                <!--android:focusable="false"-->
+                <!--android:isIndicator="true"-->
+                <!--android:numStars="5"-->
+                <!--android:clickable="false"-->
+                <!--android:progressTint="@color/colorPrimary" />-->
+
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

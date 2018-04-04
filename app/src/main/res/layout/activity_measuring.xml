@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".measuring.MeasuringActivity">
+
+    <RelativeLayout
+        android:id="@+id/monitor_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default">
+
+        <TextView
+            android:id="@+id/heart_rate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_default"
+            android:paddingBottom="@dimen/padding_default"
+            android:text="0"
+            android:textSize="80sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text_view_bpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bpm"
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_alignBaseline="@id/heart_rate_value"
+            android:layout_alignBottom="@id/heart_rate_value"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/rr_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heart_rate_value"
+            android:text="Your RR: "
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/rr_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heart_rate_value"
+            android:layout_toRightOf="@id/rr_label"
+            android:text="0.0"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/countdown"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/rr_label"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="60"-->
+            <!--android:textSize="16sp"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monitor_container">
+
+        <Button
+            android:id="@+id/stop_measuring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_default"
+            android:layout_margin="@dimen/margin_default"
+            android:background="@drawable/scious_gradient_button"
+            android:text="@string/stop_measuring"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/start_measuring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_default"
+            android:layout_margin="@dimen/margin_default"
+            android:background="@drawable/scious_gradient_button"
+            android:text="@string/start_measuring"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_layout">
+
+        <LinearLayout
+            android:id="@+id/detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="4dp"-->
+                <!--android:padding="8dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="@dimen/padding_default"-->
+                    <!--android:text="RMSSD"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/rmssd_value"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:minWidth="36dp"-->
+                    <!--android:text="0"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="4dp"-->
+                <!--android:padding="8dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:textAlignment="center">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="@dimen/padding_default"-->
+                    <!--android:text="Mean Heartrate"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/mean_hr_value"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:minWidth="36dp"-->
+                    <!--android:text="0"/>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_default"
+                    android:text="Time Remaining (seconds)"/>
+
+                <TextView
+                    android:id="@+id/countdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:minWidth="36dp"
+                    android:text="60"
+                    android:textSize="26sp"/>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="4dp"-->
+                <!--android:padding="8dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="@dimen/padding_default"-->
+                    <!--android:text="HRV Score"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/hrv_value"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:minWidth="36dp"-->
+                    <!--android:text="0"/>-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_detail_layout"
+        android:layout_margin="@dimen/margin_default">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

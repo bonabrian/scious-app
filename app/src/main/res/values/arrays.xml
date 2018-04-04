@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item name="0">@string/male</item>
+        <item name="1">@string/female</item>
+    </string-array>
+    <string-array name="gender_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="display_items_default">
+        <item>@string/p_heart_rate</item>
+        <item>@string/p_steps</item>
+        <item>@string/p_distance</item>
+        <item>@string/p_calories</item>
+        <item>@string/p_battery</item>
+    </string-array>
+
+    <string-array name="display_items">
+        <item>@string/heart_rate</item>
+        <item>@string/steps</item>
+        <item>@string/distance</item>
+        <item>@string/calories</item>
+        <item>@string/battery</item>
+    </string-array>
+
+    <string-array name="display_items_values">
+        <item>@string/p_heart_rate</item>
+        <item>@string/p_steps</item>
+        <item>@string/p_distance</item>
+        <item>@string/p_calories</item>
+        <item>@string/p_battery</item>
+    </string-array>
+
+    <string-array name="dateformat">
+        <item>@string/dateformat_time</item>
+        <item>@string/dateformat_date_time</item>
+    </string-array>
+
+    <string-array name="dateformat_values">
+        <item>@string/p_dateformat_time</item>
+        <item>@string/p_dateformat_date_time</item>
+    </string-array>
+</resources>

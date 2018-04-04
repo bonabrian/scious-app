@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="activity_user_device"
+        android:title="@string/prefs_user_device">
+        <MultiSelectListPreference
+            android:dialogTitle="@string/prefs_display_items"
+            android:defaultValue="@array/display_items_default"
+            android:entries="@array/display_items"
+            android:entryValues="@array/display_items_values"
+            android:key="mi_display_items"
+            android:summary="@string/prefs_display_items_summary"
+            android:title="@string/prefs_display_items"/>
+        <ListPreference
+            android:defaultValue="@string/p_dateformat_time"
+            android:entries="@array/dateformat"
+            android:entryValues="@array/dateformat_values"
+            android:key="mi_dateformat"
+            android:title="@string/dateformat"
+            android:summary="%s"/>
+        <EditTextPreference
+            android:digits="0123456789ABCDEF:"
+            android:key="mi_addr"
+            android:maxLength="17"
+            android:title="@string/prefs_title_mi_band2_address"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">miservice</string>
+    <string name="not_connected">Not connected</string>
+    <string name="waiting_for_reconnect">Waiting for reconnect</string>
+    <string name="connecting">Connecting</string>
+    <string name="connected">Connected</string>
+    <string name="initializing">Initializing</string>
+    <string name="authentication_required">Authentication required</string>
+    <string name="authenticating">Authenticating</string>
+    <string name="initialized">Initialized</string>
+    <string name="unknown_state">Unknown state</string>
+    <string name="discovery_attempting_to_pair">Attempting to pair with %1$s</string>
+    <string name="discovery_bonding_failed_immediately">Bonding with %1$s failed immediately.</string>
+    <string name="discovery_successfully_bonded">Successfully bonded with %1$s.</string>
+    <string name="unknown">Unknown</string>
+    <string name="bluetooth_is_not_supported">Bluetooth is not supported</string>
+    <string name="bluetooth_is_disabled">Bluetooth is disabled</string>
+    <string name="cannot_connect">Can\'t connect: %1$s</string>
+</resources>

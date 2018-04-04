@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".historydetails.HistoryDetailActivity"
+    tools:showIn="@layout/activity_history_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/history_detail_result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/history_detail_result_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_default">
+
+                <TextView
+                    android:id="@+id/history_detail_stress_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_title"
+                    android:hint="Stres Sedang"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_stress_result_top"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light"
+                android:layout_marginTop="@dimen/margin_default"/>
+
+            <include layout="@layout/include_stress_detail"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/history_detail_mood_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/padding_default"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center_horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/text_size_title"-->
+                <!--android:hint="@string/your_mood"/>-->
+
+            <!--<RatingBar-->
+                <!--android:id="@+id/history_detail_rating_value"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:numStars="5"-->
+                <!--android:isIndicator="true"-->
+                <!--android:focusable="false"-->
+                <!--android:clickable="false"-->
+                <!--android:progressTint="@color/colorPrimary"/>-->
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

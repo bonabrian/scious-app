@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                style="@style/SciousTheme.Widget.ProfileItem">
+
+                <LinearLayout
+                    android:id="@+id/btn_edit_name"
+                    style="@style/SciousTheme.Widget.ProfileItemContent">
+
+                    <TextView
+                        android:id="@+id/user_name_label"
+                        style="@style/SciousTheme.Widget.ProfileItemName"
+                        android:text="@string/name_label"/>
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        style="@style/SciousTheme.Widget.ProfileItemValue"
+                        android:hint="@string/app_author"/>
+
+                </LinearLayout>
+
+                <View style="@style/SciousTheme.Widget.Divider"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/SciousTheme.Widget.ProfileItem">
+
+                <LinearLayout
+                    android:id="@+id/btn_edit_email"
+                    style="@style/SciousTheme.Widget.ProfileItemContent">
+
+                    <TextView
+                        android:id="@+id/user_email_label"
+                        style="@style/SciousTheme.Widget.ProfileItemName"
+                        android:text="@string/email_label"/>
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        style="@style/SciousTheme.Widget.ProfileItemValue"
+                        android:hint="@string/app_email"/>
+
+                </LinearLayout>
+
+                <View style="@style/SciousTheme.Widget.Divider"/>
+
+            </FrameLayout>
+
+            <TextView style="@style/SciousTheme.Widget.ProfileHeader"
+                android:text="Personal"/>
+
+            <FrameLayout
+                style="@style/SciousTheme.Widget.ProfileItem">
+
+                <LinearLayout
+                    android:id="@+id/btn_edit_weight"
+                    style="@style/SciousTheme.Widget.ProfileItemContent">
+
+                    <TextView
+                        android:id="@+id/user_weight_label"
+                        style="@style/SciousTheme.Widget.ProfileItemName"
+                        android:text="@string/weight_label"/>
+
+                    <TextView
+                        android:id="@+id/user_weight"
+                        style="@style/SciousTheme.Widget.ProfileItemValue"
+                        android:hint="60"/>
+
+                </LinearLayout>
+
+                <View style="@style/SciousTheme.Widget.Divider"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/SciousTheme.Widget.ProfileItem">
+
+                <LinearLayout
+                    android:id="@+id/btn_edit_height"
+                    style="@style/SciousTheme.Widget.ProfileItemContent">
+
+                    <TextView
+                        android:id="@+id/user_height_label"
+                        style="@style/SciousTheme.Widget.ProfileItemName"
+                        android:text="@string/height_label"/>
+
+                    <TextView
+                        android:id="@+id/user_height"
+                        style="@style/SciousTheme.Widget.ProfileItemValue"
+                        android:hint="165"/>
+
+                </LinearLayout>
+
+                <View style="@style/SciousTheme.Widget.Divider"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/SciousTheme.Widget.ProfileItem">
+
+                <LinearLayout
+                    android:id="@+id/btn_edit_birthday"
+                    style="@style/SciousTheme.Widget.ProfileItemContent">
+
+                    <TextView
+                        android:id="@+id/user_birthday_label"
+                        style="@style/SciousTheme.Widget.ProfileItemName"
+                        android:text="@string/birthday_label"/>
+
+                    <TextView
+                        android:id="@+id/user_birthday"
+                        style="@style/SciousTheme.Widget.ProfileItemValue"
+                        android:hint="October 31, 1995"/>
+
+                </LinearLayout>
+
+                <View style="@style/SciousTheme.Widget.Divider"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/SciousTheme.Widget.ProfileItem">
+
+                <LinearLayout
+                    android:id="@+id/btn_logout"
+                    style="@style/SciousTheme.Widget.ProfileItemContent">
+
+                    <TextView
+                        android:id="@+id/logout_label"
+                        style="@style/SciousTheme.Widget.ProfileItemName"
+                        android:text="@string/action_logout"/>
+
+                </LinearLayout>
+
+                <View style="@style/SciousTheme.Widget.Divider"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

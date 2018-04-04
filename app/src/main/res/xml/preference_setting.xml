@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/action_profile"
+        android:summary="@string/cutomize_your_profile">
+        <intent
+            android:action="id.bonabrian.scious.main.PROFILE_SETTING_ACTIVITY"
+            android:targetClass="id.bonabrian.scious.profile.ProfileActivity"
+            android:targetPackage="id.bonabrian.scious.profile"/>
+    </Preference>
+</PreferenceScreen>
